@@ -1,0 +1,12 @@
+dist
+typings
+node_modules
+scripts
+*.min.js
+src/mock
+src/assets
+src/style
+*.test.*
+__tests__
+__test__
+coverage
