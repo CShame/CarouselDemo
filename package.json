@@ -48,12 +48,15 @@
     "build": "react-scripts build",
     "test": "react-scripts test",
     "eject": "react-scripts eject",
-    "lint": "eslint --ext .js,.ts,.tsx src/",
-    "lint:fix": "eslint --ext .js,.ts,.tsx src/ --fix",
-    "prettier": "prettier --write ."
+    "lint:js": "eslint --ext .js,.ts,.tsx src/",
+    "lint:js:fix": "eslint --ext .js,.ts,.tsx src/ --fix",
+    "prettier": "prettier --write .",
+    "lint:style:check": "stylelint \"src/**/*.scss\" --aei",
+    "lint:style:fix": "stylelint --fix \"src/**/*.scss\" --aei"
   },
   "lint-staged": {
-    "**/*.{js,jsx,ts,tsx}": "npm run lint",
+    "**/*.scss": "stylelint --aei",
+    "**/*.{js,jsx,ts,tsx}": "npm run lint:js",
     "**/*.{js,jsx,less,css,md,json}": "npm run prettier"
   },
   "eslintConfig": {
