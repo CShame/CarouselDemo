@@ -12,8 +12,7 @@
   &_block {
     margin: 0 8px;
     width: 40px;
-    /** 适当增加点击热区  */
-    height: 8px;
+    height: 8px; /** 适当增加点击热区  */
     display: flex;
     align-items: center;
     cursor: pointer;
