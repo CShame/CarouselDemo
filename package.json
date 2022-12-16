@@ -40,7 +40,8 @@
     "stylelint-config-standard": "^29.0.0",
     "stylelint-declaration-block-no-ignored-properties": "^2.6.0",
     "stylelint-order": "^5.0.0",
-    "typescript": "^4.9.4"
+    "typescript": "^4.9.4",
+    "unimported": "^1.23.0"
   },
   "scripts": {
     "prepare": "husky install",
@@ -52,7 +53,8 @@
     "lint:js:fix": "eslint --ext .js,.ts,.tsx src/ --fix",
     "prettier": "prettier --write .",
     "lint:style:check": "stylelint \"src/**/*.scss\" --aei",
-    "lint:style:fix": "stylelint --fix \"src/**/*.scss\" --aei"
+    "lint:style:fix": "stylelint --fix \"src/**/*.scss\" --aei",
+    "lint:unimported": "unimported"
   },
   "lint-staged": {
     "**/*.scss": "stylelint --aei",

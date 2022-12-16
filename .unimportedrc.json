@@ -1,0 +1,8 @@
+{
+  "entry": ["src/index.tsx"],
+  "extensions": [".ts", ".tsx", ".js", ".jsx"],
+  "ignoreUnimported": [],
+  "ignored": ["*.test.{js,jsx,ts,tsx}"],
+  "ignoreUnresolved": [],
+  "ignoreUnused": ["echarts-for-react"]
+}
